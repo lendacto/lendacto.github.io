@@ -126,7 +126,7 @@ input, select, textarea {
 		-webkit-text-stroke: 0.25px;
 	}
 
-	h1, h2 {
+	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
 		text-transform: uppercase;
 		line-height: 1.75em;
@@ -136,12 +136,6 @@ input, select, textarea {
 		color: inherit;
 		text-decoration: none;
 	}
-	
-	h3, h4, h5, h6 {
-		font-weight: 400;
-		line-height: 1.75em;
-	}
-
 
 	h2 {
 		font-size: 1.25em;
@@ -150,7 +144,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1em;
-		letter-spacing: 1px;
+		letter-spacing: 5px;
 	}
 
 	strong, b {
@@ -1956,6 +1950,69 @@ input, select, textarea {
 			.box.style3 header {
 				text-align: center;
 			}
+			
+			
+		.box.style4 {
+			text-align: center;
+			display: table;
+		}
+		
+		.box.style4 ul{
+			text-align: left;
+			margin: 5px 0;
+		}
+		
+		.box.style4 li{
+			text-align: left;
+			margin: 5px 0;
+		}
+			.box.style4 header {
+				display: inline-block;
+				background: #fff;
+				padding: 2em 3em 2em 3em;
+				margin: 0;
+			}
+
+				.box.style4 header p {
+					padding: 0;
+					text-align: left;
+				}
+
+			.box.style4 .inner {
+				position: relative;
+				padding: 40px 0 0px 0;
+			}
+
+				.box.style4 .inner:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 50%;
+					height: 100%;
+					border-left: solid 1px #fff;
+				}
+
+				.box.style4 .inner .row {
+					position: relative;
+				}
+
+					.box.style4 .inner .row:before {
+						content: '';
+						display: block;
+						position: absolute;
+						top: 50%;
+						left: 20px;
+						width: calc(100% - 40px);
+						border-bottom: solid 1px #fff;
+					}
+
+				.box.style4 .inner .image {
+					position: relative;
+					z-index: 1;
+					padding: 20px;
+				}
+				
 
 /* Icons */
 
@@ -2590,6 +2647,11 @@ input, select, textarea {
 						margin-bottom: -16.5px;
 						background-size: 45px 33px;
 					}
+			
+			#left{
+				 text-align: left;	
+			}
+			
 
 		/* Banner */
 
